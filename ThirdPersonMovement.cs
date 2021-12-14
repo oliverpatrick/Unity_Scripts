@@ -318,12 +318,7 @@ namespace Player
       {
         transform.localScale = crouchScale
         transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-          if(rb.velocity.magnitude > 0.5f) {
-            if (Grouded)
-            {
-              rb.AddForce(orientation.transform.forward * slideForce);
-            }
-          }
+
         	// update animator if using character
 					if (_hasAnimator)
 					{
